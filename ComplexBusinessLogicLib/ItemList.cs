@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TestExampleApp
+﻿namespace ComplexBusinessLogicLib
 {
     public class ItemList<T>
     {
@@ -29,7 +27,7 @@ namespace TestExampleApp
 
         public void RemoveById(int id)
         {
-            var itemKey = _items.First(x => x.Key ==  id).Key;
+            var itemKey = _items.First(x => x.Key == id).Key;
 
             _items.Remove(itemKey);
         }

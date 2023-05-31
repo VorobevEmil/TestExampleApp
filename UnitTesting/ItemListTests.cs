@@ -1,4 +1,4 @@
-﻿using TestExampleApp;
+﻿using ComplexBusinessLogicLib;
 
 namespace UnitTesting
 {
@@ -33,6 +33,8 @@ namespace UnitTesting
 
             // assert
             Assert.Equal(3, itemList.Count);
+            for (int i = 1; i <= itemList.Count; i++)
+                Assert.NotEmpty(itemList[i]);
         }
 
         [Fact]
